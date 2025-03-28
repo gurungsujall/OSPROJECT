@@ -1,0 +1,8 @@
+version: '3'
+services:
+  os-test:
+    build: .
+    volumes:
+      - ./:/app
+      - ./reports:/app/reports
+    privileged: true
